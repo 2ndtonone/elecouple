@@ -1,0 +1,49 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="general_text_size_smallest">8sp</dimen>
+    <dimen name="general_text_size_smaller">10sp</dimen>
+    <dimen name="general_text_size_small">12sp</dimen>
+    <dimen name="general_text_size_medium">14sp</dimen>
+    <dimen name="general_text_size_large">16sp</dimen>
+    <dimen name="general_text_size_xlarge">18sp</dimen>
+    <dimen name="general_text_size_xxlarge">20sp</dimen>
+    <dimen name="general_text_size_xxxlarge">22sp</dimen>
+    <dimen name="general_text_size_xxxxlarge">24sp</dimen>
+    <dimen name="general_text_size_super_large">36sp</dimen>
+
+    <dimen name="general_item_padding">15dp</dimen>
+    <dimen name="general_item_padding_horizontal">15dp</dimen>
+    <dimen name="general_item_padding_vertical">10dp</dimen>
+    <dimen name="general_item_vertical_spacing">10dp</dimen>
+    <dimen name="general_item_height">44dp</dimen>
+
+    <dimen name="txt_size_small_1">12sp</dimen>
+    <dimen name="txt_size_small">15sp</dimen>
+    <dimen name="txt_size_mid">20sp</dimen>
+    <dimen name="txt_size_big">24sp</dimen>
+
+    <dimen name="title_bar_height">44dp</dimen>
+    <dimen name="dialog_btn_corner_radius">4dp</dimen>
+
+    <dimen name="edit_buttom_text_size">17dp</dimen>
+    <dimen name="edit_list_text_size">14sp</dimen>
+    <dimen name="edit_tag_til_size">13sp</dimen>
+    <dimen name="edit_list_second_text_size">12sp</dimen>
+    <dimen name="edit_list_layout_height">44dp</dimen>
+    <dimen name="edit_list_layout_padding">15dp</dimen>
+    <dimen name="edit_list_layout_padding_bigger">16dp</dimen>
+    <dimen name="edit_have_buy_marginTop">5dp</dimen>
+    <dimen name="edit_content_height">27dp</dimen>
+    <dimen name="main_title_size">18sp</dimen>
+
+    <dimen name="block_gap">15dp</dimen>
+    <dimen name="agg_load_more_view_height">68dp</dimen>
+    <dimen name="circle_btn_size">35dp</dimen>
+    <dimen name="dialog_corner_radius">8dp</dimen>
+    <dimen name="round_corner_radius">4dp</dimen>
+    <dimen name="round_stroke_width">1dp</dimen>
+</resources>

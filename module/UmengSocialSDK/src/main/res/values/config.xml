@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 友盟app key -->
+    <string name="umeng_app_key" translatable="false"/>
+    <!-- 微信app id -->
+    <string name="wechat_app_id" translatable="false"/>
+    <!-- 微信app secret -->
+    <string name="wechat_app_secret" translatable="false"/>
+    <!-- 新浪微博app key -->
+    <string name="sina_weibo_app_key" translatable="false"/>
+    <!-- 新浪微博app secret -->
+    <string name="sina_weibo_app_secret" translatable="false"/>
+    <!-- 新浪微博app redirect url -->
+    <string name="sina_weibo_app_redirect_url" translatable="false"/>
+    <!-- QQ空间app id -->
+    <string name="qzone_app_id" translatable="false"/>
+    <!-- QQ空间app id在AndroidManifest中的schemal配置 -->
+    <string name="qzone_app_id_schema" translatable="false"/>
+    <!-- QQ空间app key -->
+    <string name="qzone_app_key" translatable="false"/>
+</resources>

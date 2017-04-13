@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_bg"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.sulong.elecouple.ui.views.RoundLinePageIndicator
+        android:id="@+id/circle_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="26dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        app:centered="true"
+        app:gapWidth="8dp"
+        app:lineWidth="24dp"
+        app:selectedColor="@color/main_red"
+        app:strokeWidth="3dp"
+        app:unselectedColor="#33000000"/>
+
+</FrameLayout>

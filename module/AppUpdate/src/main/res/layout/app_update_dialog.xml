@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_update_dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:text="@string/app_update_dialog_title_notice"
+        android:textColor="@color/app_update_general_text_dark"
+        android:textSize="16sp"
+        tools:text="Title"
+        tools:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="24dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/app_update_dialog_msg_notice_force"
+            android:textColor="@color/app_update_general_text_dim"
+            android:textSize="16sp"
+            tools:text="Content Content Content Content "/>
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/number_progress_bar"
+            style="@style/NumberProgressBar_Default"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_button_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_h"
+        android:background="@drawable/app_update_item_divider"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:divider="@drawable/app_update_item_divider"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <Button
+            android:id="@+id/dialog_left_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/app_update_dialog_left_button"
+            android:gravity="center"
+            android:text="@string/app_update_dialog_btn_update_later"
+            android:textColor="@color/app_update_general_text_dark"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/dialog_right_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/app_update_dialog_right_button"
+            android:gravity="center"
+            android:text="@string/app_update_dialog_btn_update"
+            android:textColor="@color/app_update_btn_text_highlight"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

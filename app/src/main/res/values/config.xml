@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 友盟app key -->
+    <string name="umeng_app_key">558132f167e58e920e00067a</string>
+    <!-- 微信app id -->
+    <string name="wechat_app_id" translatable="false">wx38e270b661319a2c</string>
+    <!-- 微信app secret -->
+    <string name="wechat_app_secret" translatable="false">28cba360546e3440e39b9d8492754255</string>
+    <!-- 新浪微博app key -->
+    <string name="sina_weibo_app_key" translatable="false">1703489416</string>
+    <!-- 新浪微博app secret -->
+    <string name="sina_weibo_app_secret" translatable="false">cee6d2e7bd651fbdd7c000b6edbf6158</string>
+    <!-- 新浪微博app redirect url -->
+    <string name="sina_weibo_app_redirect_url" translatable="false">www.baidu.com</string>
+    <!-- QQ空间app id -->
+    <string name="qzone_app_id" translatable="false">1104418077</string>
+    <!-- QQ空间app id在AndroidManifest中的schemal配置 -->
+    <string name="qzone_app_id_schema" translatable="false">1104418077</string>
+    <!-- QQ空间app key -->
+    <string name="qzone_app_key" translatable="false">K22FKrTsHP1YHN2L</string>
+    <!-- 百度地图api key -->
+    <string name="baidu_lbs_api_key">LQrNiN6fnWkgysNCunmjC5zI</string>
+    <!-- 环信 app key -->
+    <string name="huan_xin_app_key">51aigegou#aigegou</string>
+    <!-- 高德Web服务 -->
+    <string name="gao_de_map_web_app_key">3253e120b00387c19e97624785ea358f</string>
+    <!-- 微软code push部署 Key -->
+    <string name="code_push_deployment_key">7hplqUIFFGg77-Pyp5WxXjtUOZY_41c0EyRAg</string>
+    <!-- 招行一卡通支付密钥 -->
+    <string name="cmbkb_publickey">GOBtoTuY+jKU+v0swC7WHLG8bVzupJ4PbiyvQ3116JbiCRMi2xGwgxfEJeJ11uGUDByN0I96LGE2k7XP7sNqp8rThKUMnGo+eDP6neHrH+rufT+S0RfvXSkYTl9xCwPmmhd2wbbq1CDyuWgzEkSRCSPFWVyVS+Utj9v+W5aOWd78qkYjm5hrkSxYiutr2VJ7KmVbdSIcllDA9liQk2ZT0hv4vcvSx7MVIeNNc1xU1lYCyCA4zEb6GYg2K4YWTYshonUg6ptb2AqQtNfuG0UcyCixkhfY5EAeNJG0NOtY3n87z96BhwuZZ0uEHPIdF2C7pptj9ap2+F66MhLPjOTIdA==</string>
+
+</resources>

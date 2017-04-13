@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="gridview" type="id"/>
+    <item name="webview" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="parallax_view_tag" type="id"/>
+    <item name="parallax_pager" type="id"/>
+    <item name="brand_add_id" type="id"/>
+    <item name="position" type="id"/>
+    <item name="data" type="id"/>
+    <item name="holder" type="id"/>
+    <item name="index" type="id"/>
+    <item name="nav_left" type="id"/>
+    <item name="title" type="id"/>
+    <item name="title_bar" type="id"/>
+    <item name="verify_code_divider" type="id"/>
+    <item name="et_verify_code" type="id"/>
+    <item name="lat" type="id"/>
+    <item name="lng" type="id"/>
+    <item name="btn_back" type="id"/>
+    <item name="et_phone" type="id"/>
+
+</resources>

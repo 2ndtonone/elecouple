@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">撩我</string>
+
+    <string name="chose_local_pic">选择本地图片</string>
+    <string name="shot">拍照</string>
+    <string name="head_setting">设置头像</string>
+    <string name="no_data">暂无数据</string>
+    <string name="load_more_load_finish">加载完毕</string>
+    <string name="agg_cancel_text">取消</string>
+    <string name="agg_search_text">搜索</string>
+    <string name="no_longer_remind">不再提醒</string>
+    <string name="submit">提交</string>
+    <string name="confirm">确定</string>
+    <string name="add_content">添加内容</string>
+    <string name="upload_config">上传设置</string>
+    <string name="default_city" translatable="false">合肥市</string>
+    <string name="btn_ok">确认</string>
+    <string name="btn_cancel">取消</string>
+    <string name="or">或</string>
+
+    <string name="call">呼叫</string>
+
+    <string name="data_loading">玩命加载中, 请稍等&#8230;</string>
+    <string name="no_network">当前网络不给力哦，请检查您的网络连接</string>
+    <string name="data_load_fail">数据加载失败, 请检查您的网络状况</string>
+    <string name="network_error">网络异常, 没有获取到数据</string>
+    <string name="server_error">网络异常, 没有获取到数据</string>
+
+    <string name="mobile_login">手机登录</string>
+    <string name="account_login">账号登录</string>
+    <string name="phone_input_hint">请输入账号绑定的手机号</string>
+    <string name="reigist_input_hint">请输入验证码</string>
+    <string name="register_hint_input_password">请输入密码</string>
+    <string name="register_hint_input_password_again">请再次输入密码</string>
+    <string name="toast_input_different_password">两次输入密码不一致请重新输入</string>
+    <string name="remember_pwd">记住密码</string>
+    <string name="forget_pwd_with_question_mark">忘记密码?</string>
+    <string name="login_via_wechat">微信登录</string>
+    <string name="title_register">注册账号</string>
+    <string name="account_name">账户名称</string>
+    <string name="login">登录</string>
+    <string name="account">账号</string>
+    <string name="toast_wechat_login_failed">微信登录失败</string>
+    <string name="cancel">取消</string>
+    <string name="register">注册</string>
+    <string name="register_account">注册账号</string>
+    <string name="registering">正在进行注册&#8230;</string>
+    <string name="password">&#160;&#160;&#160;&#160;密码</string>
+    <string name="password_no_blank">密码</string>
+    <string name="pls_set_password">请设置6&#8211;20位的密码</string>
+    <string name="verify_code">验证码</string>
+    <string name="sms_verify">短信验证</string>
+    <string name="audio_verify">语音验证</string>
+    <string name="toast_verification_code_audio">验证码将会通过电话告之您，请注意接听来电</string>
+    <string name="phone_number_not_empty">手机号码不能为空</string>
+    <string name="password_not_empty">密码不能为空</string>
+    <string name="toast_no_install_wx">您还没有安装微信客户端</string>
+    <string name="login_failed">登录失败</string>
+    <string name="toast_input_phone_has_not_registered">该手机号尚未注册</string>
+    <string name="toast_verification_code_send_success">验证码已成功发送至您的手机</string>
+    <string name="hint_user_account">用户名</string>
+    <string name="register_verification_code_hint">请输入验证码</string>
+    <string name="login_conflict_msg">您的账号已在其他设备登录，请重新登录</string>
+
+
+    <string name="post_create_time_just_now">刚刚</string>
+    <string name="post_create_time_minute">%1$s分钟前</string>
+    <string name="post_create_time_hour">%1$s小时前</string>
+    <string name="post_number_ten_thousand">%1$.1f万</string>
+    <string name="post_number_hundred_million">%1$.1f亿</string>
+    <string name="yesterday_time">昨天 ah:mm</string>
+    <string name="xx_second">%1$s秒</string>
+    <string name="xx_second_en">%1$ss</string>
+
+    <string name="gps_fail">定位失败请检查GPS状态, 默认为您显示苏州市数据, 您可手动切换城市或到室外彻底退出客户端再次打开尝试重新定位或允许定位权限</string>
+    <string name="gps_fail_retry">定位失败,请点击重试</string>
+    <string name="permission_read_phone_state">读取手机状态权限</string>
+    <string name="permission_contact">读取联系人权限</string>
+    <string name="permission_locate">定位权限</string>
+    <string name="permission_camera">访问相机权限</string>
+    <string name="permission_access_external_storage">访问存储空间权限</string>
+    <string name="permission_access_microphone">访问麦克风权限</string>
+    <string name="permission_deny_temporarily">您已拒绝%1$s，如果无法正常使用本应用，请重新操作或重新进入本页面重新允许授权，或在系统设置里进入本应用的应用信息页，开启%2$s</string>
+    <string name="permission_deny_never_ask">您已永久拒绝%1$s，如果无法正常使用本应用，请在系统设置里进入本应用的应用信息页，开启%2$s</string>
+
+    <!-- 引导页 -->
+    <string name="guide_btn_launch">立即体验</string>
+    <string name="my_concern_hangout">随便逛逛</string>
+    <string name="toast_click_again_to_exit">再按一次退出应用</string>
+    <string name="main_home">首页</string>
+    <string name="main_mycenter">我的</string>
+    <string name="chose_area">选择地区</string>
+    <string name="welcome">Welcome</string>
+    <string name="newer_regist">新用户注册</string>
+    <string name="back">返回</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="next_step">下一步</string>
+    <string name="input_new_pwd_hint">请输入6-20位密码</string>
+    <string name="reinput_new_pwd_hint">请确认您的登陆密码</string>
+    <string name="finish">完成</string>
+    <string name="input_phone_hint">请输入手机号</string>
+    <string name="regist_success">恭喜您注册成功</string>
+    <string name="is_complete_user_info">是否完善个人资料？</string>
+    <string name="complete_now">立即完善</string>
+    <string name="browsing">随便逛逛</string>
+
+</resources>

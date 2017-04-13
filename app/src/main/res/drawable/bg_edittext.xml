@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="@integer/enter_fade_duration" android:exitFadeDuration="@integer/exit_fade_duration">
+        <item android:state_window_focused="false"  >
+            <shape xmlns:android="http://schemas.android.com/apk/res/android">
+                <solid android:color="@color/title_white" />
+                <stroke
+                    android:width="1dip"
+                    android:color="@color/title_white" />
+            </shape>
+        </item>
+       <item android:state_focused="true" >
+           <shape xmlns:android="http://schemas.android.com/apk/res/android">
+               <solid android:color="@color/title_white" />
+               <stroke
+                   android:width="1dip"
+                   android:color="@color/main_red" />
+           </shape>
+       </item>
+</selector> 

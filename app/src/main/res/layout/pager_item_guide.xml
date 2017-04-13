@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guide_bg">
+
+    <ImageView
+        android:id="@+id/guide_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/guide_image_1"/>
+
+    <ImageView
+        android:id="@+id/guide_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/guide_image"
+        android:layout_centerInParent="true"
+        android:src="@drawable/guide_title_1"/>
+
+    <Button
+        android:id="@+id/btn_launch"
+        android:layout_width="132dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/guide_image"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_guide_launch"
+        android:text="@string/guide_btn_launch"
+        android:textColor="@color/general_text_red"
+        android:textSize="@dimen/general_text_size_medium"/>
+</RelativeLayout>

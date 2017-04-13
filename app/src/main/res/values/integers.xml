@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="exit_fade_duration">@android:integer/config_shortAnimTime</integer>
+    <integer name="enter_fade_duration">0</integer>
+    <integer name="personal_info_post_grid_column_count">3</integer>
+    <integer name="verify_code_max_length">6</integer>
+    <integer name="input_phone_max_length">11</integer>
+    <integer name="pay_password_max_length">6</integer>
+</resources>

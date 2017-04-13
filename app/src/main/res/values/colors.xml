@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="general_btn_disabled">#dddddd</color>
+    <color name="general_btn_pressed">#eee</color>
+    <color name="general_btn_pressed_red">#ba3331</color>
+    <color name="general_btn_pressed_blue">#3c49ba</color>
+    <color name="general_btn_pressed_green">#349e87</color>
+    <color name="general_bg">#f6f3f3</color>
+    <color name="general_content_bg">#ffffff</color>
+    <color name="general_divider">#dddddd</color>
+    <color name="general_btn_click_pressed">#dddddd</color>
+    <color name="general_btn_click_pressed_red">#c53331</color>
+    <color name="general_btn_click_normal_red">@color/main_red</color>
+    <color name="general_text_red">@color/main_red</color>
+    <color name="general_text_blue">#43bfa4</color>
+    <color name="general_text_green">#2fc64f</color>
+    <color name="general_text_orange">@color/main_orange</color>
+    <color name="general_text_black">@color/black</color>
+    <color name="general_text_dark">#333333</color>
+    <color name="general_text_dim">#666666</color>
+    <color name="general_text_dimmer">#999999</color>
+    <color name="general_text_white">#ffffff</color>
+    <color name="general_text_white_light">#cccccc</color>
+    <color name="general_text_white_lighter">#aaaaaa</color>
+
+    <color name="main_orange">#ff9e05</color>
+    <color name="main_green">#43bfa4</color>
+    <color name="main_red">#ff4946</color>
+    <color name="main_blue">#657ce4</color>
+    <color name="main_red_light">#d42d2e</color>
+    <color name="main_red_dark">#b51e1f</color>
+    <color name="orange_light">#88ff9c00</color>
+    <color name="orange">#ffff9c00</color>
+
+    <color name="black">#000000</color>
+    <color name="black_translucent">#50000000</color>
+    <color name="gray_trans_hl">#40000000</color>
+    <color name="gray_trans">#30000000</color>
+    <color name="dark_gray">#333333</color>
+    <color name="gray_black">#666666</color>
+    <color name="nearby_gray">#999999</color>
+    <color name="btn_grey_border">#999999</color>
+    <color name="btn_gray">#bfbfbf</color>
+    <color name="light_gray">#dddddd</color>
+    <color name="hint_gray_light">#e5e5e5</color>
+    <color name="light1_gray">#eeeeee</color>
+
+    <color name="white">#ffffff</color>
+    <color name="title_white">#ffffffff</color>
+    <color name="transparent60_white">#99ffffff</color>
+    <color name="transparent_white">#77ffffff</color>
+    <color name="vertical_divider">#33ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="item_bord_line">#e2e2e2</color>
+    <color name="border_line">#ffdcdcdc</color>
+    <color name="forget_password">#813f3d</color>
+    <color name="wechat_green">#48bc55</color>
+    <color name="guide_bg">#f2f2f2</color>
+</resources>

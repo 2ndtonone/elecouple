@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/round_dialog_bg_white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/dialog_title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/edit_list_layout_padding_bigger"
+        android:layout_marginRight="@dimen/edit_list_layout_padding_bigger"
+        android:layout_marginTop="@dimen/edit_list_layout_padding_bigger"
+        android:text="@string/app_name"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/txt_size_small" />
+
+    <EditText
+        android:id="@+id/dialog_input_txt"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="@dimen/edit_list_layout_padding_bigger"
+        android:layout_marginRight="@dimen/edit_list_layout_padding_bigger"
+        android:layout_marginTop="@dimen/edit_list_layout_padding_bigger"
+        android:background="@null"
+        android:hint="@string/add_content"
+        android:singleLine="true"
+        android:textColorHint="@color/nearby_gray"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/dialog_content_txt_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/edit_list_layout_padding_bigger"
+        android:layout_marginRight="@dimen/edit_list_layout_padding_bigger"
+        android:padding="@dimen/edit_list_layout_padding_bigger"
+        android:background="@drawable/click_btn"
+        android:gravity="left"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/chose_local_pic"
+        android:textColor="@color/gray_black"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/dialog_two_conten_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_h"
+        android:layout_marginLeft="@dimen/edit_list_layout_padding_bigger"
+        android:layout_marginRight="@dimen/edit_list_layout_padding_bigger"
+        android:background="@color/light_gray"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/dialog_edit_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_h"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="@dimen/edit_list_layout_padding_bigger"
+        android:layout_marginRight="@dimen/edit_list_layout_padding_bigger"
+        android:background="@color/light_gray"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dialog_content_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/edit_list_layout_padding_bigger"
+        android:layout_marginRight="@dimen/edit_list_layout_padding_bigger"
+        android:padding="@dimen/edit_list_layout_padding_bigger"
+        android:background="@drawable/click_btn"
+        android:gravity="left"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/upload_config"
+        android:textColor="@color/gray_black"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_h"
+        android:background="@color/light1_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button"
+            android:gravity="center"
+            android:text="@string/agg_cancel_text"
+            android:textColor="@color/gray_black" />
+
+        <View
+            android:id="@+id/buttom_center_line"
+            android:layout_width="@dimen/split_line_h"
+            android:layout_height="match_parent"
+            android:background="@color/light1_gray" />
+
+        <Button
+            android:id="@+id/dialog_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/main_red" />
+    </LinearLayout>
+
+
+</LinearLayout>

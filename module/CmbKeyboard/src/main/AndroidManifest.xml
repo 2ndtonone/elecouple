@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hk.lib.cmbkeyboard">
+
+    <application>
+        <!-- >>> 招行一卡通安全键盘 >>> -->
+        <service
+            android:name="cmb.pb.cmbsafe.CmbService"
+            android:exported="false"/>
+        <activity
+            android:name="cmb.pb.ui.PBKeyboardActivity"
+            android:theme="@style/CmbDialogStyleBottom"/>
+        <!-- <<< 招行一卡通安全键盘 <<< -->
+    </application>
+</manifest>

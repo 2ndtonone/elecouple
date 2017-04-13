@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/tab_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="7dp">
+
+            <ImageView
+                android:id="@+id/tab_image"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/tab_home_normal"/>
+
+            <TextView
+                android:id="@+id/tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/mall_tab"
+                android:textSize="@dimen/general_text_size_smaller"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tab_content"
+            android:layout_marginTop="6dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</FrameLayout>

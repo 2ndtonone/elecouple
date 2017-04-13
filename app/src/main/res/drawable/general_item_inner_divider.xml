@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/general_divider"/>
+    <size
+        android:width="@dimen/split_line_h"
+        android:height="@dimen/split_line_h"/>
+    <padding android:left="@dimen/general_item_padding_horizontal"/>
+</shape>

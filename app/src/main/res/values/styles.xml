@@ -1,0 +1,288 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <style name="AhBaseTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:screenOrientation">sensorPortrait</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AhThemeWithTranslucent" parent="@style/AhBaseTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:screenOrientation">sensorPortrait</item>
+    </style>
+
+    <style name="AhThemeWithTranslucentMain" parent="@style/AhThemeWithTranslucent">
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <style name="AhThemeNoTranslucent" parent="@style/AhBaseTheme">
+        <item name="android:windowIsTranslucent">false</item>
+
+    </style>
+
+    <style name="AhThemeFullScreen" parent="@style/AhBaseTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="NaviBarTitle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="BaseBtn">
+        <item name="android:textColor">@color/title_white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="DimPanelBase" parent="@android:style/Theme.Holo.Light.Panel">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DimPanel" parent="DimPanelBase">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="ShareDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="PopupAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/activity_translate_in</item>
+        <item name="android:windowExitAnimation">@anim/activity_translate_out</item>
+    </style>
+
+    <style name="PopupAnimation1" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+    <style name="DistributionDialog" parent="android:style/Theme.Dialog">
+        <!--windowFrame框为无 -->
+        <item name="android:windowFrame">@null
+        </item>
+
+        <item name="android:windowNoTitle">true
+        </item>
+        <!-- 除去背景 -->
+        <item name="android:windowBackground">@color/white
+        </item>
+        <!--是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true
+        </item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true
+        </item>
+        <!-- 设置背景颜色 -->
+        <item name="android:background">#00000000
+        </item>
+    </style>
+
+    <style name="PostListHeaderText">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="PostListHeaderBtn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/click_btn</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="PagerSlidingTabStrip">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="pstsIndicatorColor">@color/main_red</item>
+        <item name="pstsTabPaddingLeftRight">0dp</item>
+        <item name="pstsIndicatorExtraWidth">5dp</item>
+        <item name="pstsIndicatorHeight">3dp</item>
+        <item name="pstsShouldExpand">true</item>
+        <item name="pstsTextNormalColor">@color/general_text_dark</item>
+        <item name="pstsTextSelectedColor">@color/main_red</item>
+        <item name="pstsTextSize">@dimen/general_text_size_medium</item>
+        <item name="pstsUnderlineColor">#dddddd</item>
+        <item name="pstsUnderlineHeight">@dimen/split_line_h</item>
+        <item name="pstsDividerColor">@android:color/transparent</item>
+    </style>
+
+    <style name="CreditPagerSlidingTabStrip">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="apTabIndicatorColor">@color/main_red</item>
+        <item name="apTabPaddingLeftRight">0dp</item>
+        <item name="apTabIndicatorHeight">3dp</item>
+        <item name="pstsIndicatorExtraWidth">5dp</item>
+        <item name="apTabShouldExpand">true</item>
+        <item name="apTabUnderlineColor">#dddddd</item>
+        <item name="apTabUnderlineHeight">@dimen/split_line_h</item>
+        <item name="apTabDividerColor">@android:color/transparent</item>
+    </style>
+
+    <style name="VerticalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/split_line_h</item>
+        <item name="android:background">@drawable/general_item_divider</item>
+    </style>
+
+    <style name="VerticalInnerDivider" parent="VerticalDivider">
+        <item name="android:layout_marginLeft">@dimen/general_item_padding_horizontal</item>
+    </style>
+
+    <style name="HorizontalDivider">
+        <item name="android:layout_width">@dimen/split_line_h</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/general_item_divider</item>
+    </style>
+
+    <style name="VerticalSpace">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <style name="RegisterRowContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@color/general_content_bg</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="TitleBarTextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/click_btn</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/main_red</item>
+    </style>
+
+    <style name="TitleBarTitleText">
+        <item name="android:id">@id/title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">48dp</item>
+        <item name="android:layout_marginRight">48dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/general_text_white</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/main_title_size</item>
+    </style>
+
+    <style name="TitleBarBlackTitleText" parent="TitleBarTitleText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="LoginTabContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@drawable/gray_corners_bg</item>
+        <item name="android:padding">2.5dp</item>
+    </style>
+
+    <style name="LoginTabText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/login_tab</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/login_tab_text</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="RoundBlueButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/btn_blue_round</item>
+        <item name="android:textColor">@color/red_button_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TitleBarWhite">
+        <item name="android:id">@id/title_bar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@color/general_bg</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="EditTextAboutLogin">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/nearby_gray</item>
+    </style>
+    <style name="VerifyCodeEditText" parent="EditTextAboutLogin">
+        <item name="android:id">@id/et_verify_code</item>
+        <item name="android:hint">@string/register_verification_code_hint</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">@integer/verify_code_max_length</item>
+    </style>
+
+    <style name="PhoneEditText" parent="EditTextAboutLogin">
+        <item name="android:id">@id/et_phone</item>
+        <item name="android:hint">@string/phone_input_hint</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:maxLength">@integer/input_phone_max_length</item>
+    </style>
+    <style name="SendVerifyCodeButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:enabled">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/btn_get_verify_code_text</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SendVerifyCodeButtonDivider" parent="HorizontalDivider">
+        <item name="android:id">@id/verify_code_divider</item>
+        <item name="android:background">#e4dede</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+</resources>

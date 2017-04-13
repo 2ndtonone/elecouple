@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_update_general_text_black">#000000</color>
+    <color name="app_update_general_text_dark">#333333</color>
+    <color name="app_update_general_text_dim">#666666</color>
+    <color name="app_update_general_text_dim_plus">#999999</color>
+    <color name="app_update_general_text_white">#ffffff</color>
+    <color name="app_update_general_text_white_light">#cccccc</color>
+    <color name="app_update_general_divider">#dddddd</color>
+    <color name="app_update_general_btn_pressed">#eeeeee</color>
+    <color name="app_update_btn_text_highlight">#ff4946</color>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_update_dialog_title_notice">应用更新</string>
+    <string name="app_update_dialog_msg_notice_force">检测到新版本, 请立即更新！</string>
+    <string name="app_update_dialog_btn_update">更新</string>
+    <string name="app_update_dialog_btn_update_later">稍后更新</string>
+    <string name="app_update_dialog_btn_install">安装</string>
+    <string name="app_update_dialog_btn_wrong_apk">无效的安装包</string>
+    <string name="app_update_up_to_date">当前为最新版本</string>
+</resources>

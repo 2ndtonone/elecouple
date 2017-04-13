@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/agg_ptr_header_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/agg_ptr_header_cloud_bg" />
+
+    <FrameLayout
+        android:id="@+id/agg_ptr_header_mascot_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/agg_ptr_header_mascot_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mascot_pull_to_refresh_indicator_static" />
+
+    </FrameLayout>
+
+</FrameLayout>
