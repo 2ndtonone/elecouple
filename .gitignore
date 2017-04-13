@@ -1,13 +1,10 @@
 *.iml
 .gradle
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
+/.idea
+braries
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 /module/*/build
-reactnative/App/Components/Mine/
-src/androidTest/java/com/lib/
-src/test/java/com/lib/
