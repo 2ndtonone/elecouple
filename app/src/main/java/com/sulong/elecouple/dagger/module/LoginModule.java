@@ -45,15 +45,9 @@ public class LoginModule {
 
     @Provides
     @ActivityScope
-    public IWXAPI provideWxapi(Context context) {
-        return WXAPIFactory.createWXAPI(context, context.getString(R.string.wechat_app_id));
-    }
-
-    @Provides
-    @ActivityScope
-    public ILoginModel provideLoginModel(WebClient client, JpushHelper jpushHelper, IWXAPI wxapi,
+    public ILoginModel provideLoginModel(WebClient client, JpushHelper jpushHelper,
                                          LoginManager loginManager, EventBus eventBus) {
-        return new LoginModel(client, jpushHelper, wxapi, loginManager, eventBus);
+        return new LoginModel(client, jpushHelper, loginManager, eventBus);
     }
 
     @Provides

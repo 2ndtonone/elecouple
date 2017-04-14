@@ -9,6 +9,8 @@ import android.support.annotation.IdRes;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.LocalBroadcastManager;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.sulong.elecouple.R;
 import com.sulong.elecouple.dagger.ModuleProvider;
@@ -46,8 +48,10 @@ public abstract class BaseActivity extends RxFragmentActivity
     protected BroadcastReceiver mLocalReceiver;
     protected boolean isDestroyed = false;
     protected boolean isResumed = false;
-    protected View btnBack;
     protected LoadingProgressDialog mLoadingProgressDialog;
+    private TextView tv_back;
+    private TextView tv_title;
+    private ImageView iv_back;
 
     /**
      * <p>获取正在前台运行的activity名称 </p>
@@ -141,14 +145,30 @@ public abstract class BaseActivity extends RxFragmentActivity
     }
 
     protected void setBtnBackClickListener() {
-        btnBack = $(R.id.btn_back);
-        if (btnBack != null) {
-            btnBack.setOnClickListener(new View.OnClickListener() {
+        tv_back = $(R.id.tv_back);
+        iv_back = $(R.id.iv_back);
+        if (tv_back != null) {
+            tv_back.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     finish();
                 }
             });
+        }
+        if (iv_back != null) {
+            iv_back.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish();
+                }
+            });
+        }
+    }
+
+    protected void setTitle(String title) {
+        tv_title = $(R.id.tv_title);
+        if (tv_title != null) {
+            tv_title.setText(title);
         }
     }
 
@@ -265,7 +285,7 @@ public abstract class BaseActivity extends RxFragmentActivity
     }
 
     /**
-     * @param clazz 登录完成，要跳转的页面（Activity）
+     * @param clazz  登录完成，要跳转的页面（Activity）
      * @param bundle 需要传递的参数
      */
     @Override

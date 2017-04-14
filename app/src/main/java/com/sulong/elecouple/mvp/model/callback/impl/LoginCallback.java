@@ -10,14 +10,9 @@ import com.sulong.elecouple.mvp.view.IBaseViewWithWebRequest;
  */
 public abstract class LoginCallback extends BaseWebRequestShowLoadingCallback implements ILoginCallback {
 
-    protected LoginType mLoginType;
 
-    public LoginCallback(IBaseViewWithWebRequest webRequestView, IBaseViewWithLoading loadingView, LoginType type) {
+    public LoginCallback(IBaseViewWithWebRequest webRequestView, IBaseViewWithLoading loadingView) {
         super(webRequestView, loadingView);
-        this.mLoginType = type;
     }
 
-    public LoginType getLoginType() {
-        return mLoginType;
-    }
 }

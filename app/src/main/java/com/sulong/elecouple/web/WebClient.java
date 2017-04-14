@@ -9,19 +9,11 @@ import com.loopj.android.http.IResponseHandler;
  */
 public class WebClient {
 
-    public void loginByAccount(String loginName, String password, String regId, String latitude, String longitude, String province, String selectedCityName, String gpsDistrict, String s, IResponseHandler handler) {
+    public void loginByAccount(String loginName, String password, IResponseHandler handler) {
 
-    }
-
-    public void loginByWechat(String wechatAuthCode, String regId, String latitude, String longitude, String province, String selectedCityName, String gpsDistrict, IResponseHandler handler) {
-    }
-
-    public void checkPhoneHasRegisteredUserAccount(String phone, IResponseHandler handler) {
     }
 
     public void getPhoneVerifyCode(String phone, boolean isSmsCode, IResponseHandler handler) {
     }
 
-    public void loginByVerifyCode(String phone, String verifyCode, String regId, String latitude, String longitude, String province, String selectedCityName, String gpsDistrict, String s, IResponseHandler handler) {
-    }
 }
