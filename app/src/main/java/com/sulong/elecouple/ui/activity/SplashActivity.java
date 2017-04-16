@@ -190,7 +190,7 @@ public class SplashActivity extends BaseActivity {
     }
 
     private void goToLogin() {
-        Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+        Intent intent = new Intent(this, StartActivit.class);
         startActivity(intent);
         finish();
     }

@@ -103,7 +103,7 @@
             android:layout_height="45dp"
             android:text="@string/agg_cancel_text"
             android:layout_weight="1"
-            android:background="@drawable/rectangle_orange_button"
+            android:background="@drawable/click_btn_orange_round"
             android:gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"

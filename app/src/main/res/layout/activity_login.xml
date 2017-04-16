@@ -2,26 +2,19 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@drawable/b"
               android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="200dp"
-        android:text="@string/welcome"
-        android:textColor="@color/white"
-        android:textSize="26sp"/>
+    <include layout="@layout/view_title"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:orientation="vertical"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
 
+        <View style="@style/VerticalDivider"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,9 +23,9 @@
             android:paddingRight="10dp">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_launcher"/>
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/shoujihaoma_icon"/>
 
             <EditText
                 android:id="@+id/et_login_account"
@@ -44,8 +37,6 @@
                 android:hint="@string/hint_user_account"
                 android:inputType="text"
                 android:singleLine="true"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
                 android:textSize="15sp"/>
 
             <ImageView
@@ -58,7 +49,10 @@
 
         </LinearLayout>
 
-        <View style="@style/VerticalDivider"/>
+        <View style="@style/VerticalDivider" />
+
+        <View style="@style/VerticalDivider"
+            android:layout_marginTop="10dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,9 +61,9 @@
             android:paddingRight="10dp">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_launcher"/>
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/mima_icon"/>
 
             <EditText
                 android:id="@+id/et_login_password"
@@ -80,8 +74,6 @@
                 android:background="@null"
                 android:hint="@string/password_no_blank"
                 android:singleLine="true"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
                 android:textSize="15sp"/>
 
             <ImageView
@@ -100,9 +92,9 @@
     <Button
         android:id="@+id/btn_login"
         style="@style/RoundBlueButton"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/login"/>
 
     <RelativeLayout
@@ -119,22 +111,11 @@
             android:paddingRight="20dp"
             android:paddingTop="10dp"
             android:text="@string/forget_pwd_with_question_mark"
-            android:textColor="@color/white"
-            android:textSize="15sp"/>
-
-        <TextView
-            android:id="@+id/tv_newer_regist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:textColor="@color/gray_black"
+            android:textSize="15sp"
+            android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/click_btn"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="10dp"
-            android:text="@string/newer_regist"
-            android:textColor="@color/white"
-            android:textSize="15sp"/>
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 
 

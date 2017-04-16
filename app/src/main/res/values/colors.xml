@@ -16,7 +16,7 @@
     <color name="general_btn_click_pressed_red">#c53331</color>
     <color name="general_btn_click_normal_red">@color/main_red</color>
     <color name="general_text_red">@color/main_red</color>
-    <color name="general_text_blue">#43bfa4</color>
+    <color name="general_text_blue">#5cacf4</color>
     <color name="general_text_green">#2fc64f</color>
     <color name="general_text_orange">@color/main_orange</color>
     <color name="general_text_black">@color/black</color>

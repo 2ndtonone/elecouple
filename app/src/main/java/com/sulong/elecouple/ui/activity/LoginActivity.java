@@ -1,5 +1,6 @@
 package com.sulong.elecouple.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,13 +25,6 @@ import de.greenrobot.event.EventBus;
 
 public class LoginActivity extends BaseActivity implements ILoginView {
 
-    public static final String EXTRA_LOGIN_NAME = "EXTRA_LOGIN_NAME";
-    public static final String EXTRA_LOGIN_PASSWORD = "EXTRA_LOGIN_PASSWORD";
-
-    String mLoginName = null;
-    String mLoginPassword = null;
-
-
     @BindView(R.id.et_login_account)
     EditText et_login_account;
     @BindView(R.id.iv_clear_account)
@@ -41,9 +35,6 @@ public class LoginActivity extends BaseActivity implements ILoginView {
     ImageView iv_show_pwd;
     @BindView(R.id.btn_login)
     Button btn_login;
-
-    private Class clazz;
-    private Bundle bundle;
 
     @Inject
     ILoginPresenter mLoginPresenter;
@@ -88,11 +79,6 @@ public class LoginActivity extends BaseActivity implements ILoginView {
     }
 
     void parseArguments() {
-        mLoginName = getIntent().getStringExtra(EXTRA_LOGIN_NAME);
-        mLoginPassword = getIntent().getStringExtra(EXTRA_LOGIN_PASSWORD);
-
-        clazz = (Class) getIntent().getSerializableExtra("classStr");
-        bundle = getIntent().getExtras();
     }
 
     void initViews() {
@@ -107,12 +93,9 @@ public class LoginActivity extends BaseActivity implements ILoginView {
 
     }
 
-    @OnClick(R.id.tv_newer_regist)
-    void goToRegisterPage() {
-    }
-
     @OnClick(R.id.tv_forget_pwd)
     void goToForgetPasswordPage() {
+        startActivity(new Intent(this,ForgetPwdActivity.class));
     }
 
 }

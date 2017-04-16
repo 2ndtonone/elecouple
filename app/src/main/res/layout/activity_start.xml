@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/default_label"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btn_browsing"
+        style="@style/RoundWhiteStokenButton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/browsing"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/btn_browsing"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/RoundBlueButton"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="@string/login"/>
+
+        <Button
+            android:id="@+id/btn_regeist"
+            style="@style/RoundWhiteButton"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="@string/register"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="27dip"
         android:layout_marginRight="27dip"
-        android:background="@drawable/bg_dialog_selector"
+        android:background="@drawable/click_btn_white_round"
         android:orientation="vertical">
 
         <TextView

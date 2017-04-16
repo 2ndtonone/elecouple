@@ -35,7 +35,7 @@
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:background="@drawable/empty_button"
+            android:background="@drawable/click_btn_red_large_round"
             android:text="@string/my_concern_hangout"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@android:color/white"

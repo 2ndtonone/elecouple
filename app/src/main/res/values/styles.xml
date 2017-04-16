@@ -211,31 +211,27 @@
     <style name="TitleBarBlackTitleText" parent="TitleBarTitleText">
         <item name="android:textColor">@color/black</item>
     </style>
-    <style name="LoginTabContainer">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">44dp</item>
-        <item name="android:layout_marginTop">35dp</item>
-        <item name="android:layout_marginLeft">20dp</item>
-        <item name="android:layout_marginRight">20dp</item>
-        <item name="android:background">@drawable/gray_corners_bg</item>
-        <item name="android:padding">2.5dp</item>
-    </style>
-
-    <style name="LoginTabText">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:background">@drawable/login_tab</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/login_tab_text</item>
-        <item name="android:textSize">15sp</item>
-    </style>
 
     <style name="RoundBlueButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">40dp</item>
-        <item name="android:background">@drawable/btn_blue_round</item>
+        <item name="android:background">@drawable/click_btn_blue_round</item>
         <item name="android:textColor">@color/red_button_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="RoundWhiteButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/click_btn_white_round</item>
+        <item name="android:textColor">@color/general_text_blue</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="RoundWhiteStokenButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/click_btn_white_stroke</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textSize">18sp</item>
     </style>
 
@@ -284,5 +280,9 @@
         <item name="android:background">#e4dede</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="GeneralCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
     </style>
 </resources>

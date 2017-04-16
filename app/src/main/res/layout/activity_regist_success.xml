@@ -44,7 +44,7 @@
         android:text="@string/complete_now"/>
 
     <TextView
-        android:id="@+id/tv_complete"
+        android:id="@+id/tv_browsing"
         android:layout_width="wrap_content"
         android:textSize="16sp"
         android:textColor="@color/main_blue"

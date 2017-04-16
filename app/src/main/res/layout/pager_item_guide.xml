@@ -28,7 +28,7 @@
         android:layout_below="@id/guide_image"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/btn_guide_launch"
+        android:background="@drawable/click_btn_red_large_stoken"
         android:text="@string/guide_btn_launch"
         android:textColor="@color/general_text_red"
         android:textSize="@dimen/general_text_size_medium"/>

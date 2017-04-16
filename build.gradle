@@ -5,7 +5,7 @@ buildscript {
         maven { url 'https://repos.zeroturnaround.com/nexus/content/repositories/zt-public-releases' }
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:${ANDROID_GRADLE_PLUGIN_VERSION}"
+        classpath 'com.android.tools.build:gradle:2.4.0-alpha5'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 }
