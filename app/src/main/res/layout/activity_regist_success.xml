@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/btn_complete"
+        android:id="@+id/btn_complete_user_info"
         android:layout_below="@+id/tv1"
         style="@style/RoundBlueButton"
         android:layout_marginLeft="20dp"
@@ -43,16 +43,15 @@
         android:enabled="true"
         android:text="@string/complete_now"/>
 
-    <TextView
+    <Button
         android:id="@+id/tv_browsing"
-        android:layout_width="wrap_content"
-        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textColor="@color/main_blue"
         android:layout_below="@+id/btn_complete"
+        style="@style/RoundBlueStokenButton"
         android:layout_marginTop="10dp"
-        android:text="@string/browsing"
-        android:layout_centerInParent="true"
-        android:layout_height="wrap_content"/>
+        android:text="@string/browsing"/>
 
 
 

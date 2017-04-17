@@ -214,9 +214,23 @@
 
     <style name="RoundBlueButton">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_height">@dimen/general_btn_height</item>
         <item name="android:background">@drawable/click_btn_blue_round</item>
         <item name="android:textColor">@color/red_button_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="HalfCircleRoundBlueStokenButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/general_btn_height</item>
+        <item name="android:background">@drawable/click_btn_blue_stoken_half_circle</item>
+        <item name="android:textColor">@color/white_button_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="HalfCircleRoundBlueStokenGrayBgButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/general_btn_height</item>
+        <item name="android:background">@drawable/click_btn_blue_stoken_half_circle_gray_bg</item>
+        <item name="android:textColor">@color/white_button_text</item>
         <item name="android:textSize">18sp</item>
     </style>
     <style name="RoundWhiteButton">
@@ -232,6 +246,14 @@
         <item name="android:layout_height">40dp</item>
         <item name="android:background">@drawable/click_btn_white_stroke</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="RoundBlueStokenButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/click_btn_blue_stroke</item>
+        <item name="android:textColor">@color/main_blue</item>
         <item name="android:textSize">18sp</item>
     </style>
 

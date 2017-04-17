@@ -1,16 +1,14 @@
-include ':app', ':logger', ':ptr-lib', ':archartengine', ':AppUpdate'
-include ':CmbKeyboard', ':wheel', ':qrcode', ':async-http', ':PagerSlidingTabStripLib'
-include ':UmengSocialSDK', ':richeditor', ':LoadMoreLib'
+include ':app', ':logger', ':ptr-lib', ':AppUpdate', ':Swipecards'
+include ':wheel', ':async-http', ':PagerSlidingTabStripLib'
+include ':richeditor', ':LoadMoreLib', ':UmengSocialSDK', ':Swipecards'
 
-project(':qrcode').projectDir = new File('module/qrcode')
 project(':ptr-lib').projectDir = new File('module/ptr-lib')
 project(':LoadMoreLib').projectDir = new File('module/LoadMoreLib')
 project(':PagerSlidingTabStripLib').projectDir = new File('module/PagerSlidingTabStripLib')
 project(':async-http').projectDir = new File('module/async-http')
 project(':logger').projectDir = new File('module/logger')
-project(':archartengine').projectDir = new File('module/archartengine')
 project(':wheel').projectDir = new File('module/wheel')
 project(':AppUpdate').projectDir = new File('module/AppUpdate')
-project(':UmengSocialSDK').projectDir = new File('module/UmengSocialSDK')
 project(':richeditor').projectDir = new File('module/richeditor')
-project(':CmbKeyboard').projectDir = new File('module/CmbKeyboard')
+project(':UmengSocialSDK').projectDir = new File('module/UmengSocialSDK')
+project(':Swipecards').projectDir = new File('module/Swipecards')

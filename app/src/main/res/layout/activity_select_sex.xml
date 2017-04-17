@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/choose_sex"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/gray_black"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <ImageView
+            android:id="@+id/iv_girl"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="30dp"
+            android:background="@drawable/blue_stoken_circle"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/girl"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/girl"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/gray_black"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <ImageView
+            android:id="@+id/iv_boy"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="30dp"
+            android:background="@drawable/blue_stoken_circle"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/boy"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/boy"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/gray_black"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/HalfCircleRoundBlueStokenButton"
+            android:layout_width="150dp"
+            android:text="@string/confirm"/>
+    </LinearLayout>
+
+
+</LinearLayout>

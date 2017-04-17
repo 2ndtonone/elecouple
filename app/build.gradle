@@ -243,14 +243,12 @@ dependencies {
 
     compile project(':AppUpdate')
     compile project(':logger')
-    compile project(':qrcode')
     compile project(':wheel')
     compile project(':ptr-lib')
     compile project(':async-http')
     compile project(':LoadMoreLib')
     compile project(':PagerSlidingTabStripLib')
-    compile project(':archartengine')
     compile project(':UmengSocialSDK')
     compile project(':richeditor')
-    compile project(':CmbKeyboard')
+    compile project(':Swipecards')
 }

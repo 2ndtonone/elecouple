@@ -155,12 +155,6 @@
         <!-- <<<<<<<<< 支付宝 <<<<<<<<< -->
 
         <!-- >>>>>>>>> 微信>>>>>>>>> -->
-        <activity
-            android:name="com.sulong.elecouple.wxapi.WXEntryActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <!-- <<<<<<<<< 微信 <<<<<<<<< -->
 
         <!-- >>> 新浪微博 >>> -->
@@ -175,108 +169,6 @@
             </intent-filter>
         </activity>
         <!-- <<< 新浪微博 <<< -->
-
-        <!-- >>>>>>>>> 极光推送 >>>>>>>>> -->
-        <service
-            android:name="cn.jpush.android.service.PushService"
-            android:enabled="true"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="cn.jpush.android.intent.REGISTER"/>
-                <action android:name="cn.jpush.android.intent.REPORT"/>
-                <action android:name="cn.jpush.android.intent.PushService"/>
-                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
-            </intent-filter>
-        </service>
-
-        <receiver
-            android:name="cn.jpush.android.service.PushReceiver"
-            android:enabled="true">
-            <intent-filter android:priority="1000">
-                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
-
-                <category android:name="${applicationId}"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.USER_PRESENT"/>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED"/>
-                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
-
-                <data android:scheme="package"/>
-            </intent-filter>
-        </receiver>
-
-        <activity
-            android:name="cn.jpush.android.ui.PushActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar">
-            <intent-filter>
-                <action android:name="cn.jpush.android.ui.PushActivity"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="${applicationId}"/>
-            </intent-filter>
-        </activity>
-
-        <service
-            android:name="cn.jpush.android.service.PushService"
-            android:enabled="true"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="cn.jpush.android.intent.REGISTER"/>
-                <action android:name="cn.jpush.android.intent.REPORT"/>
-                <action android:name="cn.jpush.android.intent.PushService"/>
-                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
-            </intent-filter>
-        </service>
-        <service
-            android:name="cn.jpush.android.service.DaemonService"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="cn.jpush.android.intent.DaemonService"/>
-
-                <category android:name="${applicationId}"/>
-            </intent-filter>
-        </service>
-        <service
-            android:name="cn.jpush.android.service.DownloadService"
-            android:enabled="true"
-            android:exported="false"/>
-
-        <receiver android:name="cn.jpush.android.service.AlarmReceiver"/>
-        <receiver
-            android:name="com.sulong.elecouple.receivers.PointRewardReceiver"
-            android:enabled="true"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
-                <!-- Required  用户注册SDK的intent -->
-                <action android:name="cn.jpush.android.intent.UNREGISTRATION"/>
-                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
-                <!-- Required  用户接收SDK消息的intent -->
-                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
-                <!-- Required  用户接收SDK通知栏信息的intent -->
-                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
-                <!-- Required  用户打开自定义通知栏的intent -->
-                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK"/>
-                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
-                <action android:name="cn.jpush.android.intent.CONNECTION"/>
-                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
-                <category android:name="${applicationId}"/>
-            </intent-filter>
-        </receiver>
-
-        <meta-data
-            android:name="JPUSH_CHANNEL"
-            android:value="developer-default"/>
-        <meta-data
-            android:name="JPUSH_APPKEY"
-            android:value="${JPUSH_APPKEY_VALUE}"/>
-        <!-- <<<<<<<<< 极光推送 <<<<<<<<< -->
 
         <activity
             android:name="com.sulong.elecouple.ui.activity.SplashActivity"
@@ -305,7 +197,27 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name="com.sulong.elecouple.ui.activity.NewGuideActivity"
-            android:theme="@style/AhThemeFullScreen"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.sulong.elecouple.ui.activity.ForgetPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.sulong.elecouple.ui.activity.ProtocolActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.sulong.elecouple.ui.activity.RegeistActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.sulong.elecouple.ui.activity.RegisterSuccessActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.sulong.elecouple.ui.activity.ResetPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.sulong.elecouple.ui.activity.SelectSexActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.sulong.elecouple.ui.activity.StartActivit"
             android:screenOrientation="portrait"/>
     </application>
 

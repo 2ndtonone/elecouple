@@ -13,7 +13,6 @@ import com.sulong.elecouple.dagger.component.holder.ComponentHolder;
 import com.sulong.elecouple.eventbus.RegisterSuccessEvent;
 import com.sulong.elecouple.mvp.presenter.interfaces.ILoginPresenter;
 import com.sulong.elecouple.mvp.view.ILoginView;
-import com.sulong.elecouple.utils.JpushHelper;
 import com.umeng.analytics.MobclickAgent;
 
 import javax.inject.Inject;
@@ -40,8 +39,6 @@ public class LoginActivity extends BaseActivity implements ILoginView {
     ILoginPresenter mLoginPresenter;
     @Inject
     EventBus mEventBus;
-    @Inject
-    JpushHelper mJpushHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

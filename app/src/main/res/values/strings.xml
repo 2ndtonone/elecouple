@@ -104,5 +104,9 @@
     <string name="complete_now">立即完善</string>
     <string name="browsing">随便逛逛</string>
     <string name="agree_protocol">我同意《用户协议》</string>
+    <string name="choose_sex">请选择性别</string>
+    <string name="girl">女生</string>
+    <string name="boy">男生</string>
+    <string name="income">月收入：%1$s</string>
 
 </resources>

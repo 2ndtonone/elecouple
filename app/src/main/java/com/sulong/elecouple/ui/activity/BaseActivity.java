@@ -36,8 +36,6 @@ import com.umeng.analytics.MobclickAgent;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.jpush.android.api.JPushInterface;
-
 public abstract class BaseActivity extends RxFragmentActivity
         implements IBaseViewWithWebRequest, IBaseViewWithLoading, IBaseViewWithLogin {
 
@@ -52,6 +50,7 @@ public abstract class BaseActivity extends RxFragmentActivity
     private TextView tv_back;
     private TextView tv_title;
     private ImageView iv_back;
+    private ImageView iv_more;
 
     /**
      * <p>获取正在前台运行的activity名称 </p>
@@ -76,6 +75,17 @@ public abstract class BaseActivity extends RxFragmentActivity
         injectDependencies();
         registerLocalReceiver();
         initStatusBarColor();
+        initView();
+    }
+
+    private void initView() {
+        tv_back = $(R.id.tv_back);
+        iv_back = $(R.id.iv_back);
+        tv_title = $(R.id.tv_title);
+        iv_more = $(R.id.iv_more);
+        if(iv_more!=null){
+            iv_more.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -100,7 +110,6 @@ public abstract class BaseActivity extends RxFragmentActivity
         Debug.i(getLogTag(), toString() + " | hasCode:" + hashCode());
         isResumed = true;
         MobclickAgent.onResume(this);
-        JPushInterface.onResume(this);
         showLoginConflictDialogIfNeed();
     }
 
@@ -110,7 +119,6 @@ public abstract class BaseActivity extends RxFragmentActivity
         Debug.i(getLogTag(), toString() + " | hasCode:" + hashCode());
         isResumed = false;
         MobclickAgent.onPause(this);
-        JPushInterface.onPause(this);
     }
 
     @Override
@@ -145,8 +153,6 @@ public abstract class BaseActivity extends RxFragmentActivity
     }
 
     protected void setBtnBackClickListener() {
-        tv_back = $(R.id.tv_back);
-        iv_back = $(R.id.iv_back);
         if (tv_back != null) {
             tv_back.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -166,7 +172,6 @@ public abstract class BaseActivity extends RxFragmentActivity
     }
 
     protected void setTitle(String title) {
-        tv_title = $(R.id.tv_title);
         if (tv_title != null) {
             tv_title.setText(title);
         }

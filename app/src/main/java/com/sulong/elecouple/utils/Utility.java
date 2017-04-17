@@ -53,13 +53,6 @@ import android.widget.TextView;
 
 import com.sulong.elecouple.ui.activity.SplashActivity;
 import com.google.gson.Gson;
-import com.google.zxing.BarcodeFormat;
-import com.google.zxing.EncodeHintType;
-import com.google.zxing.MultiFormatWriter;
-import com.google.zxing.WriterException;
-import com.google.zxing.common.BitMatrix;
-import com.google.zxing.qrcode.QRCodeWriter;
-import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 import com.sulong.elecouple.BuildConfig;
 import com.sulong.elecouple.LocationApplication;
 import com.sulong.elecouple.R;
@@ -861,27 +854,6 @@ public class Utility {
         return 1024 * 1024 * memoryClass / 7;
     }
 
-
-    public static Bitmap CreateZXingCodeBitmap(String content, int width, int height) throws WriterException {
-
-        BitMatrix matrix = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, width, height);
-//        int width = matrix.getWidth();
-//        int height = matrix.getHeight();
-
-        int[] pixels = new int[width * height];
-        for (int y = 0; y < height; y++) {
-            for (int x = 0; x < width; x++) {
-                if (matrix.get(x, y)) {
-                    pixels[y * width + x] = 0xff000000;
-                }
-            }
-        }
-        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-
-        bitmap.setPixels(pixels, 0, width, 0, 0, width, height);
-        return bitmap;
-    }
-
     public static void createAppShortcut() {
         Context appContext = LocationApplication.getInstance();
         //创建快捷方式的Intent
@@ -1025,10 +997,6 @@ public class Utility {
         SharedPreferences locationSp = context.getSharedPreferences(ConstantUtils.GPS_PREF, 0);
         String out = locationSp.getString(key, "");
         return out;
-    }
-
-    public static void startGetLocation() {
-        LocationApplication.getInstance().startLocate();
     }
 
     public static String addParamToUrl(String url, RequestParams webParam) {
@@ -1177,39 +1145,6 @@ public class Utility {
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
         canvas.drawBitmap(bitmap, rect, rect, paint);
         return output;
-    }
-
-    //根据传递的字符串生成二维码
-    public static Bitmap createQRImage(String url, int size) {
-        int QR_WIDTH = 350, QR_HEIGHT = 350;
-        if (size > 0) {
-            QR_HEIGHT = size;
-            QR_WIDTH = size;
-        }
-        Hashtable<EncodeHintType, Object> hints = new Hashtable<EncodeHintType, Object>();
-        hints.put(EncodeHintType.CHARACTER_SET, "utf-8");
-        hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
-
-        int[] pixels = new int[QR_WIDTH * QR_HEIGHT];
-        try {
-            BitMatrix bitMatrix = new QRCodeWriter().encode(url, BarcodeFormat.QR_CODE, QR_WIDTH, QR_HEIGHT, hints);
-            for (int y = 0; y < QR_HEIGHT; y++) {
-                for (int x = 0; x < QR_WIDTH; x++) {
-                    if (bitMatrix.get(x, y)) {
-                        pixels[y * QR_WIDTH + x] = 0xff000000;
-                    } else {
-                        pixels[y * QR_WIDTH + x] = 0xffffffff;
-                    }
-                }
-            }
-
-        } catch (WriterException e) {
-            e.printStackTrace();
-        }
-
-        Bitmap bitmap = Bitmap.createBitmap(QR_WIDTH, QR_HEIGHT, Bitmap.Config.ARGB_8888);
-        bitmap.setPixels(pixels, 0, QR_WIDTH, 0, 0, QR_WIDTH, QR_HEIGHT);
-        return bitmap;
     }
 
     public static View getItemViewByPosition(ListView listView, int pos) {

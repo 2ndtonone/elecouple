@@ -3,17 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/module/AppUpdate/AppUpdate.iml" filepath="$PROJECT_DIR$/module/AppUpdate/AppUpdate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/module/CmbKeyboard/CmbKeyboard.iml" filepath="$PROJECT_DIR$/module/CmbKeyboard/CmbKeyboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/module/LoadMoreLib/LoadMoreLib.iml" filepath="$PROJECT_DIR$/module/LoadMoreLib/LoadMoreLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/module/PagerSlidingTabStripLib/PagerSlidingTabStripLib.iml" filepath="$PROJECT_DIR$/module/PagerSlidingTabStripLib/PagerSlidingTabStripLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module/Swipecards/Swipecards.iml" filepath="$PROJECT_DIR$/module/Swipecards/Swipecards.iml" />
       <module fileurl="file://$PROJECT_DIR$/module/UmengSocialSDK/UmengSocialSDK.iml" filepath="$PROJECT_DIR$/module/UmengSocialSDK/UmengSocialSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/module/archartengine/archartengine.iml" filepath="$PROJECT_DIR$/module/archartengine/archartengine.iml" />
       <module fileurl="file://$PROJECT_DIR$/module/async-http/async-http.iml" filepath="$PROJECT_DIR$/module/async-http/async-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/elecouple.iml" filepath="$PROJECT_DIR$/elecouple.iml" />
       <module fileurl="file://$PROJECT_DIR$/module/logger/logger.iml" filepath="$PROJECT_DIR$/module/logger/logger.iml" />
       <module fileurl="file://$PROJECT_DIR$/module/ptr-lib/ptr-lib.iml" filepath="$PROJECT_DIR$/module/ptr-lib/ptr-lib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/module/qrcode/qrcode.iml" filepath="$PROJECT_DIR$/module/qrcode/qrcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/module/richeditor/richeditor.iml" filepath="$PROJECT_DIR$/module/richeditor/richeditor.iml" />
       <module fileurl="file://$PROJECT_DIR$/module/wheel/wheel.iml" filepath="$PROJECT_DIR$/module/wheel/wheel.iml" />
     </modules>

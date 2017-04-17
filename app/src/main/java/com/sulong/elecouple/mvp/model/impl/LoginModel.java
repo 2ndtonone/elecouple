@@ -1,12 +1,10 @@
 package com.sulong.elecouple.mvp.model.impl;
 
-import com.sulong.elecouple.enums.LoginType;
 import com.sulong.elecouple.eventbus.LoginSuccessEvent;
 import com.sulong.elecouple.login.LoginItem;
 import com.sulong.elecouple.login.LoginManager;
 import com.sulong.elecouple.mvp.model.callback.interfaces.ILoginCallback;
 import com.sulong.elecouple.mvp.model.interfaces.ILoginModel;
-import com.sulong.elecouple.utils.JpushHelper;
 import com.sulong.elecouple.utils.MvpAsyncHttpResponseHandler;
 import com.sulong.elecouple.web.WebClient;
 
@@ -18,14 +16,11 @@ import de.greenrobot.event.EventBus;
 public class LoginModel implements ILoginModel {
 
     private WebClient mWebClient;
-    private JpushHelper mJpushHelper;
     private LoginManager mLoginManager;
     private EventBus mEventBus;
 
-    public LoginModel(WebClient client, JpushHelper jpushHelper,
-                      LoginManager loginManager, EventBus eventBus) {
+    public LoginModel(WebClient client, LoginManager loginManager, EventBus eventBus) {
         this.mWebClient = client;
-        this.mJpushHelper = jpushHelper;
         this.mLoginManager = loginManager;
         this.mEventBus = eventBus;
     }
@@ -65,7 +60,6 @@ public class LoginModel implements ILoginModel {
             mLoginManager.saveUserLoginData(result.data);
             // 设置极光推送
             String loginName = result.data.username;
-            mJpushHelper.setupJpush(loginName);
             // 发送登录成功事件
             if (mLoginCallback != null) {
                 mLoginCallback.onSuccess();

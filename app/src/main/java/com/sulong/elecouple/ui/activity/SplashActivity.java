@@ -1,57 +1,20 @@
 package com.sulong.elecouple.ui.activity;
 
-import android.Manifest;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.text.TextUtils;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
 import com.sulong.elecouple.R;
-import com.sulong.elecouple.ui.dialog.CommonDialogFragment;
-import com.sulong.elecouple.ui.views.CustomToast;
-import com.sulong.elecouple.utils.BaiduSDKInitializer;
-import com.sulong.elecouple.utils.ConstantUtils;
 import com.sulong.elecouple.utils.PersistUtils;
-import com.sulong.elecouple.utils.Utility;
 
-import permissions.dispatcher.NeedsPermission;
-import permissions.dispatcher.OnNeverAskAgain;
-import permissions.dispatcher.OnPermissionDenied;
-import permissions.dispatcher.PermissionUtils;
-import permissions.dispatcher.RuntimePermissions;
-
-@RuntimePermissions
 public class SplashActivity extends BaseActivity {
 
-    private static final long SPLASH_DELAY_MILLIS = 2500;
-
-    private Handler mHandler = new Handler();
     private FrameLayout mGifViewContainer;
     private WebView mGifView;
-    private Runnable checkLocateSuccessTask = new Runnable() {
-        int currentSecond = 0;
-
-        @Override
-        public void run() {
-            if (currentSecond >= 10) {
-                CustomToast.makeText(getApplicationContext(), R.string.gps_fail, Toast.LENGTH_LONG).show();
-                goToNextPage(false);
-            } else if (isLocateSuccess()) {
-                goToNextPage(true);
-            } else {
-                currentSecond = currentSecond + 1;
-                mHandler.postDelayed(this, 1000);
-            }
-        }
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,88 +22,20 @@ public class SplashActivity extends BaseActivity {
 //        AppUpdateChecker.checkUpdate(true, null);
         setContentView(R.layout.activity_splash);
         loadGif();
-        SplashActivityPermissionsDispatcher.startLocateWithCheck(this);
+        if (PersistUtils.isFirstEnterApp(getApplicationContext())) {
+            goGuide();
+        } else {
+            goToLogin();
+        }
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         releaseGif();
-        mHandler.removeCallbacks(checkLocateSuccessTask);
     }
 
-    @Override
-    public void onBackPressed() {
-    }
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        SplashActivityPermissionsDispatcher.onRequestPermissionsResult(this, requestCode, grantResults);
-    }
-
-    @NeedsPermission({
-            Manifest.permission.ACCESS_COARSE_LOCATION,
-            Manifest.permission.ACCESS_FINE_LOCATION,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE,
-    })
-    public void startLocate() {
-        BaiduSDKInitializer.initialize(getApplicationContext());
-        Utility.startGetLocation();
-        mHandler.post(checkLocateSuccessTask);
-    }
-
-    @OnPermissionDenied({
-            Manifest.permission.ACCESS_COARSE_LOCATION,
-            Manifest.permission.ACCESS_FINE_LOCATION,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE,
-    })
-    public void onLocatePermissionDenied() {
-        String permissionName = getString(R.string.permission_locate) +
-                getString(R.string.or) +
-                getString(R.string.permission_access_external_storage);
-        String toastText = getString(R.string.permission_deny_temporarily, permissionName, permissionName);
-        showMessageDialog(toastText);
-    }
-
-    @OnNeverAskAgain({
-            Manifest.permission.ACCESS_COARSE_LOCATION,
-            Manifest.permission.ACCESS_FINE_LOCATION,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE,
-    })
-    public void showNeverAskAgainForLocate() {
-        String permissionName = getString(R.string.permission_locate) +
-                getString(R.string.or) +
-                getString(R.string.permission_access_external_storage);
-        String toastText = getString(R.string.permission_deny_never_ask, permissionName, permissionName);
-        showMessageDialog(toastText);
-    }
-
-    private void showMessageDialog(String contentText) {
-        new CommonDialogFragment.Builder()
-                .showTitle(false)
-                .setContentText(contentText)
-                .showSingleButton(true)
-                .setSingleButtonText(R.string.btn_ok)
-                .setOnDismissListener(new DialogInterface.OnDismissListener() {
-                    @Override
-                    public void onDismiss(DialogInterface dialog) {
-                        if (PermissionUtils.hasSelfPermissions(SplashActivity.this,
-                                Manifest.permission.ACCESS_COARSE_LOCATION,
-                                Manifest.permission.ACCESS_FINE_LOCATION)) {
-                            startLocate();
-                        } else {
-                            goToNextPage(true);
-                        }
-                    }
-                })
-                .create()
-                .show(getSupportFragmentManager());
-    }
 
     private void loadGif() {
         mGifViewContainer = (FrameLayout) findViewById(R.id.gif_view_container);
@@ -171,23 +66,6 @@ public class SplashActivity extends BaseActivity {
         mGifView.destroy();
     }
 
-    private void goToNextPage(boolean delay) {
-        Runnable task = new Runnable() {
-            @Override
-            public void run() {
-                if (PersistUtils.isFirstEnterApp(getApplicationContext())) {
-                    goGuide();
-                } else {
-                    goToLogin();
-                }
-            }
-        };
-        if (delay) {
-            mHandler.postDelayed(task, SPLASH_DELAY_MILLIS);
-        } else {
-            task.run();
-        }
-    }
 
     private void goToLogin() {
         Intent intent = new Intent(this, StartActivit.class);
@@ -205,11 +83,5 @@ public class SplashActivity extends BaseActivity {
         Intent intent = new Intent(SplashActivity.this, NewGuideActivity.class);
         startActivity(intent);
         finish();
-    }
-
-    private boolean isLocateSuccess() {
-        String gpsCityName = getSharedPreferences(ConstantUtils.GPS_PREF, MODE_PRIVATE)
-                .getString(ConstantUtils.PREF_KEY_GPS_CITY_NAME, "");
-        return !TextUtils.isEmpty(gpsCityName) && !gpsCityName.equals("null");
     }
 }

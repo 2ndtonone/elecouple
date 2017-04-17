@@ -11,15 +11,13 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/module/AppUpdate" />
-            <option value="$PROJECT_DIR$/module/CmbKeyboard" />
             <option value="$PROJECT_DIR$/module/LoadMoreLib" />
             <option value="$PROJECT_DIR$/module/PagerSlidingTabStripLib" />
+            <option value="$PROJECT_DIR$/module/Swipecards" />
             <option value="$PROJECT_DIR$/module/UmengSocialSDK" />
-            <option value="$PROJECT_DIR$/module/archartengine" />
             <option value="$PROJECT_DIR$/module/async-http" />
             <option value="$PROJECT_DIR$/module/logger" />
             <option value="$PROJECT_DIR$/module/ptr-lib" />
-            <option value="$PROJECT_DIR$/module/qrcode" />
             <option value="$PROJECT_DIR$/module/richeditor" />
             <option value="$PROJECT_DIR$/module/wheel" />
           </set>

@@ -14,7 +14,6 @@ import com.sulong.elecouple.utils.Aes;
 import com.sulong.elecouple.utils.StringUtils;
 import com.sulong.elecouple.utils.Utility;
 
-import cn.jpush.android.api.JPushInterface;
 import de.greenrobot.event.EventBus;
 
 /**
@@ -251,8 +250,6 @@ public class LoginManager {
         // 清除用户登陆缓存的返回信息
         mUserData = null;
         mKeeper.clearUserLoginData();
-        // 停止接受极光推送
-        JPushInterface.stopPush(mContext);
         // 清理即时通讯相关的通知
 //        IMNotificationManager.getInstance(mContext).cancelNewMsgNotification();
         // 注销环信登陆
