@@ -30,4 +30,11 @@ public class WebAPI {
     public static void getAreaData(IResponseHandler handler) {
 
     }
+
+    public static void getSearchList(IResponseHandler handler) {
+        String operator = "";
+        WebParam params = new WebParam();
+        get(operator, params, handler);
+
+    }
 }

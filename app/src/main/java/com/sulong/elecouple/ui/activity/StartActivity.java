@@ -13,7 +13,7 @@ import butterknife.OnClick;
  * Created by Administrator on 2017/4/15.
  */
 
-public class StartActivit extends BaseActivity {
+public class StartActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,15 +25,19 @@ public class StartActivit extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_browsing:
-
+                goToMain();
                 break;
             case R.id.btn_login:
-                goToUserLoginPage(StartActivit.class,null);
+                goToUserLoginPage(StartActivity.class,null);
                 break;
             case R.id.btn_regeist:
                 goToRegeist();
                 break;
         }
+    }
+
+    private void goToMain() {
+        startActivity(new Intent(this,MainActivity.class));
     }
 
     private void goToRegeist() {

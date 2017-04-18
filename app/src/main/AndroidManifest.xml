@@ -217,7 +217,7 @@
             android:name="com.sulong.elecouple.ui.activity.SelectSexActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.sulong.elecouple.ui.activity.StartActivit"
+            android:name="com.sulong.elecouple.ui.activity.StartActivity"
             android:screenOrientation="portrait"/>
     </application>
 

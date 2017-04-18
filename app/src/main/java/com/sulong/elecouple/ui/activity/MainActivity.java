@@ -20,6 +20,7 @@ import com.sulong.elecouple.eventbus.LoginSuccessEvent;
 import com.sulong.elecouple.ui.dialog.CommonDialogFragment;
 import com.sulong.elecouple.ui.fragment.HomeFragment;
 import com.sulong.elecouple.ui.fragment.MyCenterFragment;
+import com.sulong.elecouple.ui.fragment.SearchFragment;
 import com.sulong.elecouple.utils.AppUpdateChecker;
 import com.sulong.elecouple.utils.Debug;
 import com.hk.lib.appupdate.AppUpdateManager;
@@ -42,18 +43,23 @@ public class MainActivity extends BaseMainActivity {
     public static final int PAGE_INDEX_MINE = 1;
     private Class mTabFragmentClasses[] = {
             HomeFragment.class,
+            SearchFragment.class,
             MyCenterFragment.class
     };
     private int[] mTabIconsNormal = new int[]{
+            R.drawable.tab_home_normal,
             R.drawable.tab_home_normal,
             R.drawable.tab_mycenter_normal,
     };
     private int[] mTabIconsSelected = new int[]{
             R.drawable.tab_home_selected,
+            R.drawable.tab_home_selected,
             R.drawable.tab_mycenter_selected,
     };
     private int mTabTexts[] = new int[]{
             R.string.main_home,
+            R.string.main_search,
+            R.string.main_find,
             R.string.main_mycenter
     };
     private Fragment[] mFragments;

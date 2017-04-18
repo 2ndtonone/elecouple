@@ -88,6 +88,8 @@
     <string name="my_concern_hangout">随便逛逛</string>
     <string name="toast_click_again_to_exit">再按一次退出应用</string>
     <string name="main_home">首页</string>
+    <string name="main_search">搜索</string>
+    <string name="main_find">发现</string>
     <string name="main_mycenter">我的</string>
     <string name="chose_area">选择地区</string>
     <string name="welcome">Welcome</string>
@@ -108,5 +110,6 @@
     <string name="girl">女生</string>
     <string name="boy">男生</string>
     <string name="income">月收入：%1$s</string>
+    <string name="account_type_location">系统认证用户  |  居住地：合肥</string>
 
 </resources>

@@ -10,6 +10,7 @@ import android.widget.ImageView;
 
 import com.sulong.elecouple.R;
 import com.sulong.elecouple.ui.activity.MainActivity;
+import com.sulong.elecouple.ui.activity.StartActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -72,7 +73,7 @@ public class GuideFragment extends BaseFragment {
         btnLaunch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), MainActivity.class);
+                Intent intent = new Intent(getActivity(), StartActivity.class);
                 startActivity(intent);
                 getActivity().finish();
             }
