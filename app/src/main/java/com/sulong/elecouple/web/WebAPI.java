@@ -1,5 +1,6 @@
 package com.sulong.elecouple.web;
 
+import com.sulong.elecouple.utils.AggAsyncHttpResponseHandler;
 import com.sulong.elecouple.utils.ConstantUtils;
 import com.sulong.elecouple.utils.Utility;
 import com.loopj.android.http.IResponseHandler;
@@ -36,5 +37,11 @@ public class WebAPI {
         WebParam params = new WebParam();
         get(operator, params, handler);
 
+    }
+
+    public static void getFindTabList(IResponseHandler handler) {
+        String operator = "";
+        WebParam params = new WebParam();
+        get(operator, params, handler);
     }
 }

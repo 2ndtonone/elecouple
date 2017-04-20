@@ -3,7 +3,7 @@ package com.sulong.elecouple.mvp.view;
 import java.util.List;
 
 /**
- * Created by lq on 2016/7/27.
+ * Created by ydh on 2016/7/27.
  */
 public interface IPtrLoadMoreView extends IBaseViewWithWebRequest, IBaseViewWithLoading {
 

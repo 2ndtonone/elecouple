@@ -12,7 +12,6 @@ public class AllAreaDataItem extends SimpleResult1 {
 
     public class Data {
         public ArrayList<String> hot_city;
-        public LinkedHashTreeMap<String, ArrayList<String>> city_index;
         public ArrayList<CityDistrict> city_district;
     }
 

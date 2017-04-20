@@ -1,6 +1,5 @@
 package com.sulong.elecouple.ui.fragment;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -31,16 +30,6 @@ public class MyCenterFragment extends BaseFragment {
     private List<ProvinceDataItem.ProvinceData> provinceData;
     private Map<String, List<ProvinceDataItem.ProvinceData.CityData>> provinceCityMap;
     private Map<String, List<AreaItem>> cityDistrictMap;
-
-    @Override
-    public void onAttach(Activity context) {
-        super.onAttach(context);
-        initMvp();
-    }
-
-    private void initMvp() {
-
-    }
 
     @Nullable
     @Override

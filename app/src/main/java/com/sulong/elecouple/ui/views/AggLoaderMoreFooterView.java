@@ -50,7 +50,7 @@ public class AggLoaderMoreFooterView extends RelativeLayout implements LoadMoreU
         mLoadingHint = r.getString(R.string.data_loading);
         mHeight = r.getDimensionPixelSize(R.dimen.agg_load_more_view_height);
 
-        mContainer = (ViewGroup) LayoutInflater.from(getContext()).inflate(R.layout.agg_loader_more_foot_view, null);
+        mContainer = (ViewGroup) LayoutInflater.from(getContext()).inflate(R.layout.ah_loader_more_foot_view, null);
         LayoutParams containerLp = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, mHeight);
         addView(mContainer, containerLp);
         mProgressBar = findViewById(R.id.loading_progress);

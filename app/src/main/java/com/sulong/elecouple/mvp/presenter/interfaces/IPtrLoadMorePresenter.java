@@ -1,7 +1,7 @@
 package com.sulong.elecouple.mvp.presenter.interfaces;
 
 /**
- * Created by lq on 2016/7/27.
+ * Created by ydh on 2016/7/27.
  */
 public interface IPtrLoadMorePresenter {
     void loadListData(boolean refresh);

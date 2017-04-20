@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/age"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            style="@style/SearchItemRightText"/>
+    </LinearLayout>
+
+    <View style="@style/VerticalDivider"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/address"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/SearchItemRightText"/>
+    </LinearLayout>
+
+    <View style="@style/VerticalDivider"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/human_height"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_human_height"
+            style="@style/SearchItemRightText"/>
+    </LinearLayout>
+
+    <View style="@style/VerticalDivider"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/qualification"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_qualification"
+            style="@style/SearchItemRightText"/>
+    </LinearLayout>
+
+    <View style="@style/VerticalDivider"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/income_per_month"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_income"
+            style="@style/SearchItemRightText"/>
+    </LinearLayout>
+
+    <View style="@style/VerticalDivider"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/is_buy_house"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_is_buy_house"
+            style="@style/SearchItemRightText"/>
+    </LinearLayout>
+
+    <View style="@style/VerticalDivider"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/is_buy_car"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_is_buy_car"
+            style="@style/SearchItemRightText"/>
+    </LinearLayout>
+
+    <View style="@style/VerticalDivider"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/marriage"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_marriage"
+            style="@style/SearchItemRightText"/>
+    </LinearLayout>
+
+    <View style="@style/VerticalDivider"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/HalfCircleRoundBlueStokenButton"
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:text="@string/confirm"/>
+
+
+</LinearLayout>

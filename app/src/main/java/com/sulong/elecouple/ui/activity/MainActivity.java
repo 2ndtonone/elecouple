@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.sulong.elecouple.R;
 import com.sulong.elecouple.eventbus.LoginSuccessEvent;
 import com.sulong.elecouple.ui.dialog.CommonDialogFragment;
+import com.sulong.elecouple.ui.fragment.FindFragment;
 import com.sulong.elecouple.ui.fragment.HomeFragment;
 import com.sulong.elecouple.ui.fragment.MyCenterFragment;
 import com.sulong.elecouple.ui.fragment.SearchFragment;
@@ -40,20 +41,25 @@ public class MainActivity extends BaseMainActivity {
 
     public static final String EXTRA_PAGE_INDEX = "EXTRA_INDEX";
     public static final int PAGE_INDEX_HOME = 0;
-    public static final int PAGE_INDEX_MINE = 1;
+    public static final int PAGE_INDEX_SEARCH = 1;
+    public static final int PAGE_INDEX_MINE = 2;
+    private static final int REQUEST_SEARCH = 0;
     private Class mTabFragmentClasses[] = {
             HomeFragment.class,
             SearchFragment.class,
+            FindFragment.class,
             MyCenterFragment.class
     };
     private int[] mTabIconsNormal = new int[]{
             R.drawable.tab_home_normal,
             R.drawable.tab_home_normal,
             R.drawable.tab_mycenter_normal,
+            R.drawable.tab_mycenter_normal,
     };
     private int[] mTabIconsSelected = new int[]{
             R.drawable.tab_home_selected,
             R.drawable.tab_home_selected,
+            R.drawable.tab_mycenter_selected,
             R.drawable.tab_mycenter_selected,
     };
     private int mTabTexts[] = new int[]{
@@ -77,10 +83,13 @@ public class MainActivity extends BaseMainActivity {
 //                homeFragment.stopListViewScroll();
             }
             switch (index) {
-                case PAGE_INDEX_MINE: {
+                case PAGE_INDEX_MINE:
                     setTintColor(Color.TRANSPARENT);
-                }
-                break;
+                    break;
+                case PAGE_INDEX_SEARCH:
+                    mHolder.iv_search.setVisibility(View.VISIBLE);
+                    break;
+
             }
         }
     };
@@ -214,10 +223,21 @@ public class MainActivity extends BaseMainActivity {
 
     private void findViews() {
         mHolder.main_bottom_tab_container = $(R.id.main_bottom_tab_container);
+        mHolder.iv_search = $(R.id.iv_search);
     }
 
     private void initView() {
         addBottomTabs();
+        mHolder.iv_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToSearchPage();
+            }
+        });
+    }
+
+    private void goToSearchPage() {
+        startActivityForResult(new Intent(this, SearchActivity.class), REQUEST_SEARCH);
     }
 
     private void updateTabMineRedPoint() {
@@ -328,10 +348,24 @@ public class MainActivity extends BaseMainActivity {
         return fragment;
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode) {
+            case REQUEST_SEARCH:
+                switchPage(PAGE_INDEX_SEARCH);
+                if (mFragments[PAGE_INDEX_SEARCH] != null) {
+                    ((SearchFragment) mFragments[PAGE_INDEX_SEARCH]).refreshDate();
+                }
+                break;
+        }
+    }
+
     private static class ViewHolder {
         LinearLayout main_bottom_tab_container;
         ImageView[] tabImageViews;
         ImageView[] redPoints;
+        ImageView iv_search;
         TextView[] tabTextViews;
     }
 }

@@ -4,7 +4,9 @@ buildscript {
     repositories {
         jcenter()
         mavenCentral()
-        maven { url 'https://repos.zeroturnaround.com/nexus/content/repositories/zt-public-releases' }
+        maven {
+            url 'https://repos.zeroturnaround.com/nexus/content/repositories/zt-public-releases'
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:${ANDROID_GRADLE_PLUGIN_VERSION}"
@@ -104,7 +106,8 @@ android {
             String vName = variant.versionName
             String buildTypeName = variant.buildType.name
             String flavorName = null
-            if (variant.productFlavors && !variant.productFlavors.isEmpty()) {  // productFlavors可能有多个维度，但现在实际用只会用1个维度，所以只取第一个flavorName
+            if (variant.productFlavors && !variant.productFlavors.isEmpty()) {
+                // productFlavors可能有多个维度，但现在实际用只会用1个维度，所以只取第一个flavorName
                 flavorName = variant.productFlavors[0]?.name
             }
             String apkFileName = "${appName}_${vCode}_${vName}.apk"

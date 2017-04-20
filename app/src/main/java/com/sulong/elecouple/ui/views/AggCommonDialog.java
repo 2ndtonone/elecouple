@@ -59,7 +59,7 @@ public class AggCommonDialog extends BaseDialogFragment implements View.OnClickL
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View layout = inflater.inflate(R.layout.agg_common_dialog, container, false);
+        View layout = inflater.inflate(R.layout.ah_common_dialog, container, false);
 
         mTitleTxt = (TextView) layout.findViewById(R.id.dialog_title_txt);
         mContentTxt = (TextView) layout.findViewById(R.id.dialog_content_txt);

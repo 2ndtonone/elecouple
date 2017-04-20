@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="80dp">
+
+    <com.sulong.elecouple.ui.views.CircleImageView
+        android:id="@+id/iv_user_head"
+        android:layout_width="50dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/iv_user_head"
+        android:layout_alignTop="@+id/iv_user_head"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/app_name"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/iv_user_head"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tv_name"
+        android:textColor="@color/gray_black"
+        android:text="@string/app_name"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/iv_user_head"
+        android:textColor="@color/select_white_gray"
+        android:background="@drawable/select_btn_green_round"
+        android:text="@string/refuse"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/iv_user_head"
+        android:textColor="@color/gray_black"
+        android:text="@string/day_and_month"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

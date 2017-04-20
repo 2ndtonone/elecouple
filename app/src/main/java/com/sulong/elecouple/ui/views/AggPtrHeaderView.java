@@ -68,7 +68,7 @@ public class AggPtrHeaderView extends LinearLayout implements PtrUIHandler {
     }
 
     private void init() {
-        inflate(getContext(), R.layout.agg_ptr_default_header_view, this);
+        inflate(getContext(), R.layout.ah_ptr_default_header_view, this);
         findViews();
         addGifView();
         post(new Runnable() {

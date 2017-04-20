@@ -48,4 +48,5 @@
     <dimen name="dialog_corner_radius">8dp</dimen>
     <dimen name="round_corner_radius">4dp</dimen>
     <dimen name="round_stroke_width">1dp</dimen>
+    <dimen name="banner_h">320dp</dimen>
 </resources>

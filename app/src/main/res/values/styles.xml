@@ -78,6 +78,11 @@
         <item name="android:windowExitAnimation">@anim/popup_exit</item>
     </style>
 
+    <style name="AnimBottom" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
     <style name="DistributionDialog" parent="android:style/Theme.Dialog">
         <!--windowFrame框为无 -->
         <item name="android:windowFrame">@null
@@ -297,6 +302,16 @@
         <item name="android:textSize">15sp</item>
     </style>
 
+    <style name="SearchItemRightText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/gray_black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:lines">1</item>
+    </style>
+
     <style name="SendVerifyCodeButtonDivider" parent="HorizontalDivider">
         <item name="android:id">@id/verify_code_divider</item>
         <item name="android:background">#e4dede</item>
@@ -307,4 +322,16 @@
     <style name="GeneralCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
         <item name="android:button">@drawable/checkbox_style</item>
     </style>
+
+    <style name="FindTabTextStyle" >
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/select_btn_blue_circle</item>
+        <item name="android:textColor">@color/select_white_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
 </resources>

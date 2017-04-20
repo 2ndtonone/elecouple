@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_actual"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="23dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tashuo_biaoqian" />
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/actual"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_actual_engagements_state"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="fill_vertical"
+                android:text="@string/engagements_state"
+                android:textColor="@color/main_red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_actual_engagements_time"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="fill_vertical"
+                android:text="@string/engagements_time"
+                android:textColor="@color/text_color_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_actual_engagements_place"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="fill_vertical"
+                android:text="@string/engagements_place"
+                android:textColor="@color/text_color_black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_actual_engagements_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="fill_vertical"
+                android:text="@string/engagements_theme"
+                android:textColor="@color/text_color_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_actual_engagements_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="fill_vertical"
+                android:text="@string/engagements_pay"
+                android:textColor="@color/text_color_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_actual_engagements_type"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="fill_vertical"
+                android:text="@string/engagements_type"
+                android:textColor="@color/text_color_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

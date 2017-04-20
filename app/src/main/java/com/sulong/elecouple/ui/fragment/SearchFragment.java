@@ -21,7 +21,6 @@ public class SearchFragment  extends BasePtrLoadMoreListFragment{
 
     @Override
     protected BaseAdapter getListAdapter() {
-
         return new SearchAdapter();
     }
 
@@ -68,5 +67,9 @@ public class SearchFragment  extends BasePtrLoadMoreListFragment{
     @Override
     protected boolean isInViewPager() {
         return true;
+    }
+
+    public void refreshDate() {
+        loadListData(true);
     }
 }

@@ -10,8 +10,10 @@ public class ConstantUtils {
     private static final String SERVER_TYPE_TESTSHOP = "testshop";
     private static final String SERVER_TYPE_ONLINE_TEST = "online_test";
     private static final String SERVER_TYPE_RELEASE = "release";
-    private static final String SERVER_TYPE_MANJIAN = "manjian";
-    private static final String SERVER_TYPE_YOUHUA = "youhua";
+    public static final String FIND_LIST_TYPE_1 = "谁撩过我";
+    public static final String FIND_LIST_TYPE_2 = "申请聊天";
+    public static final String FIND_LIST_TYPE_3 = "我的聊天";
+    public static final String FIND_LIST_TYPE_4 = "我的约会";
 
     private static String SERVER_URL = "http://shop.aigegou.com/";
     private static String MOBLIE_URL = "mobile/";
@@ -30,10 +32,6 @@ public class ConstantUtils {
             SERVER_URL = "http://testshop.aigegou.com/";
         } else if (BuildConfig.SERVER_TYPE.equals(SERVER_TYPE_ONLINE_TEST)) {
             SERVER_URL = "http://online.aigegou.com/";
-        } else if (BuildConfig.SERVER_TYPE.equals(SERVER_TYPE_MANJIAN)) {
-            SERVER_URL = "http://manjian.aigegou.com/";
-        } else if (BuildConfig.SERVER_TYPE.equals(SERVER_TYPE_YOUHUA)) {
-            SERVER_URL = "http://youhua.aigegou.com/";
         } else {
             SERVER_URL = "http://192.168.6.27/";
         }
